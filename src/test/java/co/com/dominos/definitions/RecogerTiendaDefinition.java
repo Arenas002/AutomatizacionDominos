@@ -2,14 +2,17 @@ package co.com.dominos.definitions;
 
 
 import co.com.dominos.tasks.*;
+import io.cucumber.java.*;
 import io.cucumber.java.es.*;
 import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.actors.*;
 import org.apache.log4j.PropertyConfigurator;
 import static co.com.dominos.enums.Diccionario.URL_BASE;
 import static co.com.dominos.enums.Log4jValues.LOG4J_PROPERTIES_FILE_PATH;
 
 
 public class RecogerTiendaDefinition {
+
 
     @Dado("que el {actor} se encuentra en el aplicativo")
     public void queElUsuarioSeEncuentraEnElAplicativo(Actor actor) {
